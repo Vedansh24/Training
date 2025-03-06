@@ -1,0 +1,24 @@
+wap to check a given number is strong or not 
+<br>
+
+<script>
+//Given number is strong or not
+var n=146,i,sum=0,rem;
+var temp=n;
+while(n>0)
+{
+   rem=n%10;
+   var f=1;
+   for(i=1;i<=rem;i++)
+   {
+     f=f*i;
+   }
+   sum+=f;
+   n=parseInt(n/10);
+}
+
+if (sum==temp)
+document.write("it is strong number");
+else
+document.write("it not is strong number");
+</script>

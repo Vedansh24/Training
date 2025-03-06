@@ -1,0 +1,36 @@
+//WAP to take a input of 5 sub marks and cal the sum and per, acc to the makrs of each sub check wheather a student is pass or fail or in sup.
+//less then 33 fail more then 2 
+//33 or more then 33 is pass 
+//less then 33 in one subject is sup
+<br>
+<br>
+
+<script>
+var a=50,b=20,c=10,d=90,e=50,per,sum,count=0;
+var sum=a+b+c+d+e;
+document.write(sum+"<br>");
+var per=(sum/500)*100;
+document.write("%"+per+"%<br>");
+
+if(a<=33)
+  count++;
+if(b<=33)
+  count++;
+if(c<=33)
+  count++;
+if(d<=33)
+  count++;
+if(e<=33)
+  count++;
+
+if(count>=2)
+document.write("YESS fail!");
+else if(count==1)
+document.write("Ek subject aur!");
+else
+document.write("Next Ana bhai !");
+
+
+
+
+</script>

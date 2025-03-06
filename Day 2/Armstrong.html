@@ -1,0 +1,22 @@
+<script>
+   //Armstrong Number
+
+   var n=1546,sum=0,len,rem,temp;
+   len=n.toString().length;
+   //document.write(len);
+   temp=n;
+   while(n>0)
+   {
+      rem=n%10;
+      sum=sum+Math.pow(rem,len);
+      n=parsenInt(n/10);
+   } 
+   if(sum==temp)
+   document.write("The number is Armstrong");
+   
+   else
+   document.write("The number is not Armstrong");
+
+</script>
+
+

@@ -1,0 +1,19 @@
+//wap to cheack a given 3 digit is Armstrong
+<br>
+<br>
+
+<script>
+  var n=152, n1, n2, n3, sum;
+  n1 = n % 10;
+  n2 = parseInt(n / 10) % 10;
+  n3 = parseInt(n / 100);
+  sum = Math.pow(n1, 3) + Math.pow(n2, 3) + Math.pow(n3, 3);
+  
+
+if (sum == n) {
+     document.write(n + "is an Armstrong number.");
+}
+else {
+document.write(n + "is not Armstrong number.");
+}
+</script>

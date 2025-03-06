@@ -1,0 +1,12 @@
+<script>
+    var num = 12345; 
+    var rnum = 0; 
+
+    while (num > 0) {
+        var d = num % 10; 
+        rnum = rnum * 10 + d; 
+        num = parseInt(num / 10); 
+    }
+
+    document.write("Reversed number: " + rnum);
+</script>

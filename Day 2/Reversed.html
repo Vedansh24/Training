@@ -1,0 +1,17 @@
+wap to revers a given array using logic. 
+
+<script>
+
+let arr = [1, 2, 3, 4, 5];  // Given array
+let n = arr.length;
+
+// Swapping elements using two-pointer approach
+for (let i = 0; i < Math.floor(n / 2); i++) {
+    let temp = arr[i];              // Store first element
+    arr[i] = arr[n - i - 1];        // Swap with last element
+    arr[n - i - 1] = temp;          // Assign back
+}
+
+console.log("Reversed Array:", arr);
+
+</script>

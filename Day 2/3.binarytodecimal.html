@@ -1,0 +1,14 @@
+<script>
+    var bin = 1011;  
+    var onum = bin;
+    var dec = 0, base = 1;
+
+    while (bin > 0) {
+        var digit = bin % 10;
+        dec = dec + digit * base;
+        base = base * 2;
+        bin = parseInt(bin / 10);
+    }
+
+    document.write("Decimal of " + onum + " is: " + dec);
+</script>

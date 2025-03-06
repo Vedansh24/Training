@@ -1,0 +1,16 @@
+<script>
+    var num = 1234321;
+    var onum = num;
+    var rnum = 0;
+
+    while (num > 0) {
+        var digit = num % 10;
+        rnum = rnum * 10 + digit;
+        num = parseInt(num / 10);
+    }
+
+    if (onum == rnum)
+        document.write(onum + " is a palindrome.");
+    else
+        document.write(onum + " is not a palindrome.");
+</script>

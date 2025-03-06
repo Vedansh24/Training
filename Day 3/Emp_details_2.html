@@ -1,0 +1,18 @@
+<script>
+var empDetails=[
+{"eno":1001,"enm":"Vedansh","esal":123000.23},
+{"eno":1002,"enm":"Vansh","esal":14500.32},
+{"eno":1003,"enm":"Harsh","esal":15230.52}]
+
+empDetails.map(row=>
+{
+Object.keys(row).map((key)=>
+{
+document.write(key+":"+row[key]+"<br>")
+})
+document.write("<br>")
+})
+
+
+
+</script>
