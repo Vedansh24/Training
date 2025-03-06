@@ -1,5 +1,3 @@
-
-
 function demo(n){
     {
         return new Promise((resolve,result)=>

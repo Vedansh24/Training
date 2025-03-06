@@ -19,4 +19,4 @@ check(n,(res)=>
 
 
 })
-console.log("after function execution");
+console.log("after function execution")
