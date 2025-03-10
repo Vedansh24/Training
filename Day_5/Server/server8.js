@@ -14,4 +14,4 @@ var server=http.createServer((request,response)=>{
 })
 
 server.listen(8081);
-console.log("Sever listen at link: http://localhost:8081");
+console.log("Server listen at link: http://localhost:8081");
